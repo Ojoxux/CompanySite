@@ -118,7 +118,7 @@ body {
     display: flex;
     gap: 106px;
     height: 1605px;
-    margin-left: 81px;
+    margin-left: 177px;
     margin-top: 95px;
     min-width: 1171px;
     position: absolute;
@@ -212,11 +212,13 @@ body {
     width: 556px;
 }
 
-.-image-container {
+.image-container {
     align-items: flex-start;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
+    gap: 43px;
+    margin-top: 200px;
     height: 1457px;
     width: 484px;
 }
@@ -578,7 +580,7 @@ body {
 .our-service {
     align-items: flex-end;
     display: flex;
-    gap: 83px;
+    gap: 196px;
     height: 1197px;
     margin-left: 81px;
     margin-top: 95px;
@@ -651,8 +653,8 @@ body {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    margin-top: 500px;
-    min-height: 1028px;
+    /*min-height: 1028px;*/
+    height: 1245px;
     width: 557px;
 }
 
@@ -705,6 +707,14 @@ body {
     width: 442px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列のグリッドレイアウトを定義 */
+    grid-gap: 20px; /* グリッドアイテム間の間隔を設定 */
+    justify-content: center; /* グリッドアイテムを中央に配置 */
+    align-items: center; /* グリッドアイテムを中央に配置 */
+    text-align: center; /* グリッドアイテム内のテキストを中央に配置 */
+}
 .header {
     align-items: flex-start;
     background-color: transparent;
@@ -713,7 +723,7 @@ body {
     flex-shrink: 1;
     justify-content: flex-start;
     margin-left: 8px;
-    min-width: 1448px;
+    max-width: 2560px;
     width: auto;
 }
 
@@ -723,7 +733,7 @@ body {
     box-shadow: 0px 4px 4px #00000048;
     display: flex;
     height: 52px;
-    min-width: 1440px;
+    min-width: 1620px;
     padding: 5px 33px;
 }
 
@@ -732,7 +742,7 @@ body {
 .navbar-link-products,
 .navbar-link-news,
 .navbar-link-recruit {
-    margin-right: 50px; /* 項目間のスペースを調整 */
+    margin-right: 140px; /* 項目間のスペースを調整 */
 }
 
 .webpage .navbar-link {
@@ -850,6 +860,7 @@ body {
 
 .circuit-background-1 {
     height: 363px;
+    margin-top: 121px;
     object-fit: cover;
     width: 100%;
 }
@@ -866,7 +877,7 @@ body {
 
 .computer-image {
     height: 344px;
-    margin: 84px auto; /* 上部の余白を調整し、左右の余白を自動調整 */
+    margin: 73px auto; /* 上部の余白を調整し、左右の余白を自動調整 */
     object-fit: cover;
     width: 743px;
     display: block; /* ブロック要素として中央に配置 */
