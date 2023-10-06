@@ -14,10 +14,10 @@
         <header class="header">
             <div class="navbar">
                 <img class="c-logo" src="images/c-logo.png" alt="C++ logo">
-                <div class="navbar-link-place navbar-link roboto-normal-outer-space-20px">Home</div>
-                <div class="navbar-link-news navbar-link roboto-normal-outer-space-20px">News</div>
-                <div class="navbar-link-products navbar-link roboto-normal-outer-space-20px">Products</div>
-                <div class="navbar-link-recruit navbar-link roboto-normal-outer-space-20px">Recruit</div>
+                <div id="top-link" class="navbar-link-place navbar-link roboto-normal-outer-space-20px">Home</div>
+                <div id="news-link" class="navbar-link-news navbar-link roboto-normal-outer-space-20px">News</div>
+                <div id="products-link" class="navbar-link-products navbar-link roboto-normal-outer-space-20px">Products</div>
+                <div id="recruit-link" class="navbar-link-recruit navbar-link roboto-normal-outer-space-20px">Recruit</div>
                 <img class="search-logo navbar-link" src="images/searchIcon.svg" alt="searchLogo">
                 <img class="user-icon navbar-link" src="images/userIcon.svg" alt="userIcon">
             </div>
@@ -104,23 +104,19 @@
                         <div class="example-hospital roboto-semi-bold-white-54px">Example Hospital</div>
                     </div>
                 </div>
-                <div class="view-more roboto-light-science-blue-32px">View more &gt;</div>
+                <div id="testimonials-link" class="view-more roboto-light-science-blue-32px">View more &gt;</div>
             </div>
             <div class="blog">
                 <div class="blog-1 roboto-semi-bold-black-54px">Blog</div>
+                <p class="Our-activity roboto-light-black-36px">Please take a look at our activities.</p>
                 <div class="flex-row-1 flex-row-3">
                     <div class="blogblock-container">
-                        <div class="blogblock"></div>
-                        <div class="blog-block-1 blog-black-3"></div>
-                        <div class="blog-block-2 blog-black-3"></div>
-                    </div>
-                    <div class="blogblock-container-1">
-                        <div class="blogblock"></div>
-                        <div class="blog-block-1 blog-black-3"></div>
-                        <div class="blog-block-2 blog-black-3"></div>
+                        <div class="blog-block"></div>
+                        <div class="blog-block-1"></div>
+                        <div class="blog-block-2"></div>
                     </div>
                 </div>
-                <div class="view-more-1 roboto-light-science-blue-32px">View more &gt;</div>
+                <div id="blog-link" class="view-more-1 roboto-light-science-blue-32px">View more &gt;</div>
             </div>
             <div class="separate-lines">
                 <img class="line-1 line" src="images/line.svg" alt="Line1">
@@ -139,15 +135,15 @@
                     <div class="overlap-group3">
                         <div class="frontend-developer roboto-semi-bold-white-54px">Frontend Developer</div>
                         <div class="matthew roboto-semi-bold-white-40px">Matthew</div>
-                        <img class="add-circle-outline" src="images/Add circle outline.png" alt="Add circle outline">
+                        <img class="add-circle-outline-matthew" src="images/Add circle outline.png" alt="Add circle outline">
                     </div>
                 </div>
-                <div class="flex-col">
+                <div class="flex-col-8">
                     <img class="n-image-1" src="images/Woman_image 1.png" alt="Woman-image 1">
                     <div class="overlap-group5">
-                        <div class="sales-manager roboto-semibold-white-54px">Sales Manager</div>
+                        <div class="sales-manager roboto-semi-bold-white-54px">Sales Manager</div>
                         <div class="bianca roboto-semi-bold-white-40px">Bianca</div>
-                        <img class="add-circle-outline" src="images/Add circle outline.png" alt="Add circle outline">
+                        <img class="add-circle-outline-bianca" src="images/Add circle outline.png" alt="Add circle outline">
                     </div>
                 </div>
                 <div class="flex-col-6">
@@ -155,13 +151,46 @@
                     <div class="overlap-group4">
                         <div class="mobile-developer roboto-semi-bold-white-54px">Mobile Developer</div>
                         <div class="jay roboto-semi-bold-white-40px">Jay</div>
-                        <img class="add-circle-outline" src="images/Add circle outline.png" alt="Add circle outline">
-                    </div>
+                        <img class="add-circle-outline-jay" src="images/Add circle outline.png" alt="Add circle outline">
+                    </div> 
                 </div>
             </div>
         </div>
         <img class="footer" src="images/footter.png" alt="Footer">
     </div>
 </body>
+
+<script>
+    const homeLink = document.getElementById('top-link');
+    const newsLink = document.getElementById('news-link');
+    const productsLink = document.getElementById('products-link');
+    const recruitLink = document.getElementById('recruit-link');
+    const testimonialsLink = document.getElementById('testimonials-link');
+    const blogLink = document.getElementById('blog-link');
+    
+    homeLink.addEventListener('click', () => {
+        window.location.href = 'top.html';
+    });
+
+    newsLink.addEventListener('click', () => {
+        window.location.href = 'news.html';
+    });
+
+    productsLink.addEventListener('click', () => {
+        window.location.href = 'products.html';
+    });
+
+    recruitLink.addEventListener('click', () => {
+        window.location.href = 'recruit.html';
+    });
+
+    testimonialsLink.addEventListener('click', () => {
+        window.location.href = 'testimonials.html';
+    });
+
+    blogLink.addEventListener('click', () => {
+        window.location.href = 'blog.html';
+    });
+</script>
 
 </html>
