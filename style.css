@@ -122,6 +122,7 @@ body {
     text-align: center;
     white-space: nowrap;
     width: 186px;
+    z-index: 10;
 }
 
 .blog-1 {
@@ -346,6 +347,7 @@ body {
     text-align: center;
     white-space: nowrap;
     width: 186px;
+    z-index: 10;
 }
 
 .flex-row {
